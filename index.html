@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Task 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>INTERACTIVE WEB EXPERIENCE</h1>
+        <p>Responsive Design • Image Carousel • API Integration</p>
+    </header>
+
+    <section class="carousel-section">
+        <h2>Image Carousel</h2>
+        <div class="carousel">
+            <img src="" alt="Slide" id="carousel-image">
+            <div class="carousel-buttons">
+                <button onclick="prevImage()">❮ Prev</button>
+                <button onclick="nextImage()">Next ❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="api-section">
+        <h2>Random Joke (via API)</h2>
+        <p id="joke">Click the button to get a joke!</p>
+        <button onclick="fetchJoke()">Get Joke</button>
+    </section>
+
+    <section class="quiz-section">
+        <h2>🌍 Country Quiz</h2>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What is the capital of Australia?</p>
+                <label><input type="radio" name="q1" value="a"> Sydney</label><br>
+                <label><input type="radio" name="q1" value="b"> Melbourne</label><br>
+                <label><input type="radio" name="q1" value="c"> Canberra</label>
+            </div>
+
+            <div class="question">
+                <p>2. Which continent is Argentina located in?</p>
+                <label><input type="radio" name="q2" value="a"> Europe</label><br>
+                <label><input type="radio" name="q2" value="b"> South America</label><br>
+                <label><input type="radio" name="q2" value="c"> Asia</label>
+            </div>
+
+            <div class="question">
+                <p>3. Which country has the largest population?</p>
+                <label><input type="radio" name="q3" value="a"> India</label><br>
+                <label><input type="radio" name="q3" value="b"> China</label><br>
+                <label><input type="radio" name="q3" value="c"> USA</label>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+            <p id="quiz-result"></p>
+        </form>
+    </section>
+
+    <div id="quiz-completion" class="completion-message">
+        <h3> You've completed the quiz!</h3>
+        <p>Great job exploring the content! Want to learn more or try another quiz?</p>
+        <a href="#carousel" class="cta-button">Explore Again</a>
+        <a href="https://example.com" class="cta-button" target="_blank">Visit Our Blog</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
